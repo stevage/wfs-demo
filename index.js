@@ -98,7 +98,7 @@ service.getFeature({
         tableNumericField: tableNumericField,
         tableIdField: tableIdField,
         geometryIdField: 'SA2_MAIN11',
-        geometryTiles: ['http://openapi.aurin.org.au/gwc/service/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=' + geomTypeName + '&STYLE=&TILEMATRIX=EPSG:900913:{z}&TILEMATRIXSET=EPSG:900913&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}'],
+        geometryTiles: ['https://openapi.aurin.org.au/gwc/service/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=' + geomTypeName + '&STYLE=&TILEMATRIX=EPSG:900913:{z}&TILEMATRIXSET=EPSG:900913&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}'],
         sourceLayer: geomTypeName.replace('aurin:', ''),
         colorScheme: 'YlOrRd',
         paint: { 'fill-opacity': 0.5 }
